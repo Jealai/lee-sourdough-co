@@ -59,6 +59,29 @@
     footer{background:var(--ink);color:var(--cream)}footer a:hover{color:#E2C8A8}.legal{border-color:rgba(244,239,230,.4)}
     @media(max-width:800px){.wrap{width:min(100% - 34px,1200px)}.nav{height:70px}.hero{padding:38px 0 70px}.hero-grid{gap:34px}.hero-photo{min-height:455px;border-radius:0;order:-1}.photo-note{left:12px;bottom:12px}.choice-grid{grid-template-columns:1fr}.choice{min-height:152px}.split,.open-grid{gap:36px}.split>div:last-child{padding-top:0}.round-photo{aspect-ratio:4/5;max-width:none}.open-photo{min-height:400px}.instagram-grid{grid-template-columns:1fr 1fr;gap:0}.instagram-post:nth-child(even){margin-top:24px}.subscribe-box{padding:38px 24px}.faq-grid{gap:6px}section,.subscribe{padding:78px 0}.order-layout.order-only{text-align:left}.order-layout.order-only .lead{margin-inline:0}}
   </style>
+  <style>
+    /* Mobile editorial flow: prevent desktop grid ordering from overlapping content. */
+    @media (max-width:800px){
+      .hero-grid,.open-grid{display:flex;flex-direction:column;align-items:stretch}
+      .hero-grid>.hero-photo,.open-grid>.open-photo{order:0;flex:none;width:100%}
+      .hero-grid>.fade:not(.hero-photo),.open-grid>.open-copy{order:1;width:100%}
+      .hero-grid{gap:32px}.open-grid{gap:34px}
+      .hero-photo{min-height:430px}.hero-photo img{object-position:center top}
+      .open-photo{min-height:390px;padding:8px}.open-photo img{object-position:center}
+      .hero h1{font-size:clamp(3.15rem,14vw,4.35rem);line-height:.98;margin-bottom:18px}
+      .hero p{max-width:34rem}.choice-grid{margin-top:30px}
+      .drop-status{margin-top:14px;padding:14px 0;gap:9px}
+      .drop-status a{padding-top:6px}
+      .open-copy h2{font-size:clamp(3rem,13vw,4.25rem)}
+      .open-copy .lead{font-size:1.1rem}.open-copy .quote{font-size:1.12rem;margin-top:24px}
+      .instagram-post{aspect-ratio:1}.instagram-post:nth-child(even){margin-top:0}
+    }
+    @media (max-width:420px){
+      .hero-photo{min-height:380px}.open-photo{min-height:355px}
+      .hero-grid{gap:26px}.open-grid{gap:28px}
+      .choice{min-height:146px}.choice strong{font-size:1.45rem}
+    }
+  </style>
 </head>
 <body>
   <header><div class="wrap nav"><a class="logo" href="#home"><img src="assets/lees-sourdough-logo-sticker.png" alt="Lee's Sourdough Co."></a><nav><a href="#about">About</a><a href="order.html">Order Bread</a><a href="cottage-bakery.html">Cottage Bakery</a><a href="#open-table">One More Loaf</a><a href="#faq">FAQ</a></nav><a class="btn olive" href="#subscribe">Never miss an order drop!</a></div></header>
