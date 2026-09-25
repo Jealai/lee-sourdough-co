@@ -32,7 +32,7 @@ nav { gap:1.35rem; font-size:.68rem; }
 nav a { display:flex; align-items:center; min-height:44px; }
 .nav>.btn { font-size:.64rem; padding-inline:1rem; }
 .nav-toggle { display:none; }
-.home-page .hero p.eyebrow { font-size:.825rem; line-height:1.6; }
+.home-page .hero p.eyebrow,.home-page .preorder-hours { font-size:.825rem; line-height:1.6; }
 .home-page .hero { padding:40px 0 var(--section-space); }
 .home-page .hero-grid { display:grid; grid-template-columns:1.08fr 1fr; gap:4vw; align-items:center; }
 .home-page .hero h1 { color:var(--espresso); font-size:clamp(3.3rem,5.7vw,5.8rem); margin-bottom:24px; }
@@ -55,6 +55,7 @@ nav a { display:flex; align-items:center; min-height:44px; }
 .drop-status a { white-space:normal; min-height:44px; display:flex; align-items:center; }
 .drop-status b { font-size:.975rem; line-height:1.6; }
 .drop-status small,.drop-status a { font-size:.755rem; }
+.home-page .preorder-hours { margin:0; padding:0 20px 16px; text-align:center; text-wrap:balance; }
 .ticker { background:var(--maroon); padding-block:17px; font-size:.65rem; }
 .split { grid-template-columns:1fr 1fr; gap:8vw; }
 .split>div:last-child { padding-top:0; }
